@@ -5,16 +5,20 @@ import configparser
 config = configparser.ConfigParser()
 #config.sections()
 config.read('dev.ini')
-print(config.sections())
+#print(config.sections())
 #for key in config['dal']:
 #    print(key)
 def getToken():
     loginURL= config['DEFAULT']['LoginURL']
-    body = {"email":"ruhama.sardar@quarrio.com","password":"Ruha@098"}
+    body = {"email":"user@quarrio.com","password":"user@123"}
+    
     headers = {'Content-type': 'application/json'}
     response = requests.post(url = loginURL,data=json.dumps(body), headers=headers)
     loginResponse = json.loads(response.text) 
     token = loginResponse["token"]
+#key for dev
+#    decoded_token  = jwt.decode(token,'i81nl7e@njx6qmeon9hQ1LF8o#4y=tcc%58@l=pntcp34pfugb')
+#key for alpha
     decoded_token  = jwt.decode(token,'i81nl7e@njx6qmeon9hQ1LF8o#4y=tcc%58@l=pntcp34pfugb')
     userid = decoded_token["user_id"]
     print ("token:", token)
