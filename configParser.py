@@ -5,9 +5,9 @@ config = configparser.ConfigParser()
 config['DEFAULT'] = { 
         'LoginURL': 'https://auth.qca-dev.com/api/api/1.0/login/',
         'baseURL' : 'https://auth.qca-dev.com/',
-        'email': 'ruhama.sardar@quarrio.com',
-        'bcc': 'ruhama.sardar@quarrio.com',
-        'cc': 'ruhama.sardar@quarrio.com',
+        'email': 'user@quarrio.com',
+        'bcc': 'user@quarrio.com',
+        'cc': 'user@quarrio.com',
         'theme': 'light'
      }
 
@@ -45,7 +45,7 @@ config['postDatasource'] = {
          'userId': '282',
   'dbId': 'string',
   'istokenExpired' : "true",
-  'salesforceEmail': 'ruhama0980@quarrio.com',
+  'salesforceEmail': 'user0980@quarrio.com',
   'salesforceSyncInterval': '0',
   'sfOrgId': 'string',
   'synchronizationStageId': '0',
@@ -71,9 +71,9 @@ config['deleteDatasource'] = {
 
 config['postfeedback'] = { 
         'url': 'api/1.0/qca/feedback/',
-         'cc': 'ruhama.sardar@quarrio.com',
-  'email': 'ruhama.sardar@quarrio.com',
-  'userEmail': 'ruhama.sardar@quarrio.com',
+         'cc': 'user@quarrio.com',
+  'email': 'user@quarrio.com',
+  'userEmail': 'user@quarrio.com',
   'message': 'string',
   'name': 'string',
   'questionLabel': 'list of accounts',
@@ -152,9 +152,9 @@ config['postquestionUnpin'] = {
 
 config['resetPassword'] = { 
         'url': 'api/1.0/qca/reset-user-pwd/',
-         'confirmPassword': 'Ruha@098',
+         'confirmPassword': 'test@098',
 	'currentPassword' : 'Test@098',
-	'password': 'Ruha@098'
+	'password': 'test@098'
 
      }
 config['postSendEmail'] = { 
@@ -207,7 +207,7 @@ config['putQcaUser'] = {
         'url': 'api/1.0/qca/user/',
         'userId': '398',
         'username': 'ruhama',
-        'email': 'ruhama.sardar@quarrio.com',
+        'email': 'user@quarrio.com',
         'firstName': 'ruhama',
         'lastName': 'sardar',
         'phone': '0330747241761'   
@@ -233,7 +233,7 @@ config['getSalesforcrceDisconnect'] = {
 
 config['postSalesforcrcelogin'] = { 
         'url': 'api/1.0/salesforcelogin/',
-        'email':'ruhama.sardar@quarrio.com',
+        'email':'user@quarrio.com',
         'h':'002eew3azeerzzWWfZZ'       
      }
 
